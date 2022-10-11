@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Grockery Online | Daily Needs</title>
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+
+<body>
+    <header style="top:0px;">
+        <nav>
+            <ul id="navList">
+                <li><a class="logo" href="#">
+                        <img onclick="expandMenu()" style="padding:5px;"  src="/img/menu(2).png" alt="menu">
+                        <p class="logoHead mytxt-1"> <i>Grocery</i> </p>
+                    </a></li>
+
+                <li>
+                    <form action="input">
+                        <input type="text" name="search" id="searchBar"
+                            placeholder="Search essentails, groceries, and more...">
+                    </form>
+                <li><img id="searchIcon" src="/img/searchBtn.png" alt="search"></li>
+
+                </li>
+                <li><img id="user" src="/img/user.png" alt="user">
+                    <a id="userText" href="#">Sign in / Sign up</a>
+                </li>
+                <li><img id="cart" src="/img/grocery-store.png" alt=""></li>
+                <a id="cartText" href="#">Cart</a>
+
+            </ul>
+            <div  id="menuTab">
+                <div class="mTab1">
+                    <div class="mTab1-first">
+                        <img style="padding-top:4px; transform: translateY(3px);" height="21px" src="/img/user.png" alt="User">
+                        <p class="mytxt-1 mTab1-first-para">Hello, Sign in </p>
+                    </div>
+                    <img onclick="closeNav()" src="/img/close.png" alt="Close" id="closeIcon">
+                    <div class="mTab1-second">
+                        <button class="mTab1-img ">Account</button>
+                        <button class="mTab1-img">Orders</button>
+                    </div>
+
+                </div>
+                <div style= "height: calc(100% - 92px); overflow-y: scroll;">
+
+                    <div class="mTab2">
+                        <ul id="mTab-list" >
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop by Category</a></li>
+                            <li><a href="#">My list</a></li>
+                            <li><a href="#">Grocery Wallet</a></li>
+                            <li><a href="#">Grocery Gift Store</a></li>
+                            <li><a href="#">Grocery Gift Card</a></li>
+                            <li><a href="#">Go Green with Grocery</a></li>
+                            <li><a href="#">All Offers</a></li>
+                        </ul>
+    
+                    </div>
+                    <div class="mTab3">
+                        <ul class="mTab-list">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Need Help</a></li>
+                            <li><a href="#">Guide</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mTab4">
+                        
+                        <p class="mTab4-head mytxt-1">CONTACT US</p>
+                        <p class="mTab4-para">WhatsApp us : <span class="ph-nums">948223XXXX</span> </p>
+                        <p style="margin-top:3px;" class="mTab4-para">Call us : <span class="ph-nums">948223XXXX</span> </p>
+                        <div class="mTab4-first">
+                            <a href="#"><img style="padding-top:3px;" src="/img/fb.png" alt="Facebook" class="mTab4-first-img"></a>
+                            <a href="#"><img style="padding-top:3px;" src="/img/ig.png" alt="Instagram" class="mTab4-first-img"></a>
+                            <a href="#"><img style="padding-top:3px;" src="/img/tw.png" alt="Twitter" class="mTab4-first-img"></a>
+                            <a target="_blank" href="https://github.com/4darsh-Dev"><img style="height:23px;" src="/img/github-logo.png" alt="GitHub" class="mTab4-first-img"></a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                
+               
+    
+            </div>
+            
+
+        </nav>
+
+
+        <div class="nav2 mytxt-1">
+
+            <ul id="itemsList">
+                <li id="nav-item1" onmouseover="toggleMenu()" onmouseout="revToggle()" class="list-item"><a href="#">Groceries</a></li>
+                
+                   
+                
+                <li id="nav-item2"  ><a href="#">Premium Fruits</a></li>
+                <li id="nav-item3"  ><a href="#">Home & Kitchen</a></li>
+                <li id="nav-item4"  ><a href="#">Fashion</a></li>
+                <li id="nav-item5" ><a href="#">Beauty</a></li>
+                <li id="nav-item6"  ><a href="#">Jewellry</a></li>
+            </ul>
+            
+
+
+        </div>
+        <div class="nav3 mytxt-1">
+            
+            <ul class="sub-list" id="sub1-list">
+
+                <li><a href="#">Fruits & Vegetables</a></li>
+                <li><a href="#">Dairy & Bakery</a></li>
+                <li><a href="#">Staples</a></li>
+                <li><a href="#">Beverages</a></li>
+                <li><a href="#">Personal Care</a></li>
+    
+            </ul>
+            <ul class="sub-list" id="sub2-list">
+
+                <li><a href="#">Apple, Pears</a></li>
+                <li><a href="#">Avocado, Plum</a></li>
+                <li><a href="#">Staples</a></li>
+                <li><a href="#">Banana, Melon</a></li>
+                <li><a href="#">Citurs, Mango </a></li>
+    
+            </ul>
+            <ul class="sub-list" id="sub3-list">
+
+                <li><a href="#">Kitchenware</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Furnishing</a></li>
+                <li><a href="#">Home Decor</a></li>
+                <li><a href="#">Home Appliances</a></li>
+                <li><a href="#">Electrical</a></li>
+                <li><a href="#">Bathroom</a></li>
+                <li><a href="#">Laundry</a></li>
+                <li><a href="#">Stationery</a></li>
+    
+            </ul>
+            <ul class="sub-list" id="sub4-list">
+
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Boys</a></li>
+                <li><a href="#">Girls</a></li>
+                <li><a href="#">Infants</a></li>
+    
+            </ul>
+            <ul class="sub-list" id="sub5-list">
+
+                <li><a href="#">Make up</a></li>
+                <li><a href="#">Hair</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Fragrances</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Men's Grooming</a></li>
+                <li><a href="#">Treatments</a></li>
+    
+            </ul>
+            <ul class="sub-list" id="sub6-list">
+
+                
+                <li><a href="#">Fine Jewellry</a></li>
+                <li><a href="#">Jewellry</a></li>
+                
+            </ul>
+
+        </div>
+        
+
+    </header>
+    <main>
+        <div class="displayer">
+            <div class="slider-container">
+                <div class="slider">
+                    <a href="#"><img class="displayerImg" src="img/displayerImg1.jpg" alt="Image"></a>
+
+                </div>
+                <div class="slider">
+                    <a href="#"><img class="displayerImg" src="img/displayerImg2.jpg" alt="Image"></a>
+
+                </div>
+                <div class="slider">
+                    <a href="#"><img class="displayerImg" src="img/displayerImg3.jpg" alt="Image"></a>
+
+                </div>
+                <div class="slider">
+                    <a href="#"><img class="displayerImg" src="img/displayerImg4.jpg" alt="Image"></a>
+
+                </div>
+                <div class="slider">
+                    <a href="#"><img class="displayerImg" src="img/displayerImg5.jpg" alt="Image"></a>
+
+                </div>
+                <div class="prev-button" onclick="plusSlide(-1)">&#10094;</div>
+                <div class="next-button" onclick="plusSlide(1)">&#10095;</div>
+            </div>
+        </div>
+        <div class="shopCategory">
+            <div class="categoryTitle">
+                <p class=" mytxt-1" id="categoryHead"> Shop By Category</p>
+            </div>
+            <div class="categoryBox">
+
+                <div style="margin-left:0px ;" class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg1.jpg" alt="Image">
+
+                </div>
+                <div class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg2.jpg" alt="Image">
+
+                </div>
+
+                <div class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg3.jpg" alt="Image">
+
+                </div>
+
+                <div class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg4.jpg" alt="Image">
+
+                </div>
+
+                <div style="margin-left:0px;" class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg5.jpg" alt="Image">
+
+                </div>
+                <div class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg6.jpg" alt="Image">
+
+                </div>
+                <div class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg7.jpg" alt="Image">
+
+                </div>
+                <div class="myBox">
+                    <img class="categoryImg" src="/img/categoryImg8.jpg" alt="Image">
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="subImg1">
+            <img id="subImg1" src="/img/pampersImg.jpg" alt="Image">
+        </div>
+        <div class="topDeals">
+            <p class="topDealsHead mytxt-1">Top Deals</p>
+
+            <div class="topDealsRow">
+                <div class="topDealsBox1">
+
+                    <img class="topDealsImg" src="/img/topDeal1.jpg" alt="Image">
+
+                    <span class="productInfo">Sugar(M) 2Kg </span>
+                    <div class="priceBox">
+                        <span class="finalPrice">&#8377;88.00</span>
+                        <span class="price">
+                            M.R.P: <strike>&#8377;100.00</strike>
+                        </span>
+                        <span class="savePrice">Save &#8377;17.00</span>
+
+                    </div>
+                    <button class="addToCart">
+                        Add to Cart
+                    </button>
+
+                </div>
+                <div class="topDealsBox1">
+
+                    <img class="topDealsImg" src="/img/topDeal2.jpg" alt="Image">
+
+                    <span class="productInfo">Colgate Strong Teeth </span>
+                    <div class="priceBox">
+                        <span class="finalPrice">&#8377;188.00</span>
+                        <span class="price">
+                            M.R.P: <strike>&#8377;253.00</strike>
+                        </span>
+                        <span class="savePrice">Save &#8377;65.00</span>
+
+                    </div>
+                    <button class="addToCart">
+                        Add to Cart
+                    </button>
+
+                </div>
+                <div class="topDealsBox1">
+
+                    <img class="topDealsImg" src="/img/topDeal3.jpg" alt="Image">
+
+                    <span class="productInfo">Surf Excel Matic Front</span>
+                    <div class="priceBox">
+                        <span class="finalPrice">&#8377;1325.00</span>
+                        <span class="price">
+                            M.R.P: <strike>&#8377;1425.00</strike>
+                        </span>
+                        <span class="savePrice">Save &#8377;100.00</span>
+
+                    </div>
+                    <button class="addToCart">
+                        Add to Cart
+                    </button>
+
+                </div>
+                <div class="topDealsBox1">
+
+                    <img class="topDealsImg" src="/img/topDeal4.jpg" alt="Image">
+
+                    <span class="productInfo">Amul Butter 500g</span>
+                    <div class="priceBox">
+                        <span class="finalPrice">&#8377;245.00</span>
+                        <span class="price">
+                            M.R.P: <strike>&#8377;255.00</strike>
+                        </span>
+                        <span class="savePrice">Save &#8377;10.00</span>
+
+                    </div>
+                    <button class="addToCart">
+                        Add to Cart
+                    </button>
+
+                </div>
+                <div class="topDealsBox1">
+
+                    <img class="topDealsImg" src="/img/topDeal5.jpg" alt="Image">
+
+                    <span class="productInfo">Sunfeast Dark Fantasy</span>
+                    <div class="priceBox">
+                        <span class="finalPrice">&#8377;109.00</span>
+                        <span class="price">
+                            M.R.P: <strike>&#8377;170.00</strike>
+                        </span>
+                        <span class="savePrice">Save &#8377;61.00</span>
+
+                    </div>
+                    <button class="addToCart">
+                        Add to Cart
+                    </button>
+
+                </div>
+                <div class="topDealsBox1">
+
+                    <img class="topDealsImg" src="/img/topDeal6.jpg" alt="Image">
+
+                    <span class="productInfo">Tur / Arhar Dal 2Kg</span>
+                    <div class="priceBox">
+                        <span class="finalPrice">&#8377;248.00</span>
+                        <span class="price">
+                            M.R.P: <strike>&#8377;300.00</strike>
+                        </span>
+                        <span class="savePrice">Save &#8377;52.00</span>
+
+                    </div>
+                    <button class="addToCart">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="subImg1">
+            <img id="subImg1" src="/img/veeba.jpg" alt="Image">
+        </div>
+
+    </main>
+    <footer>
+        <div class="footerBox">
+            <div class="f-subBox">
+                <div class="f-subBox1">
+                    <div class="subBox1-first">
+                        <p class="logoHead mytxt-1">
+                            <i style=" margin-top:14px; display:inline-block;">Grocery</i>
+                        </p>
+                        <p id="copyright">
+                            Grocery &copy; 2022. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="subBox1-second">
+                        <a  id = "support" href="support@myGroceries.net">
+                            support@myGroceries.net
+                        </a>
+                    </div>
+                    <div class="contactSites">
+                        <a href="#" target="_blank" ><img style="margin-left: 13px; " src="/img/fb.png" alt="Facebook" class ="c-images"></a>
+                        <a href="#" target="_blank" ><img src="/img/ig.png" alt="Instagram" class ="c-images"></a>
+                        <a href="#" target="_blank"> <img src="/img/tw.png" alt="Twitter" class ="c-images"></a>
+                        <a href="https://github.com/4darsh-Dev" target="_blank" ><img style="height:26px;" src="/img/github-logo.png" alt="GitHub" class ="c-images"></a>
+                    </div>
+
+                </div>
+                <div class="f-subBox2">
+                    <div class="subBox2-first">
+                        <p class="subBox2-head">
+                            GROCERY
+                        </p>
+                    </div>
+                    <div class="subBox2-second">
+                       
+                        <a class="subBox2-links" href="#">Contact</a>
+                        <a class="subBox2-links" href="#">Jobs-We're hiring!</a>
+                        <a class="subBox2-links" href="#">Privacy Policy</a>
+                        <a class="subBox2-links" href="#">Terms and Conditions</a>
+                        <a class="subBox2-links" href="#">Security Policy</a>
+                    </div>
+                </div>
+                <div class="f-subBox2">
+                    <div class="subBox2-first">
+                        <p class="subBox2-head">
+                            PRODUCT
+                        </p>
+                    </div>
+                    <div class="subBox2-second">
+                        <a class="subBox2-links" href="#">Staples</a>
+                        <a class="subBox2-links" href="#">Beverages</a>
+                        <a class="subBox2-links" href="#">Personal Care</a>
+                        <a class="subBox2-links" href="#">Home Care</a>
+                        <a class="subBox2-links" href="#">Baby Care</a>
+                        
+                    </div>
+
+                </div>
+                <div class="f-subBox2">
+                    <div class="subBox2-first">
+                        <p class="subBox2-head">
+                            INTEGRATIONS
+                        </p>
+                    </div>
+                    <div class="subBox2-second">
+                        <a class="subBox2-links" href="#">All</a>
+                        <a class="subBox2-links" href="#">Shopify</a>
+                        <a class="subBox2-links" href="#">WordPress</a>
+                        <a class="subBox2-links" href="#">Squarespace</a>
+                        <a class="subBox2-links" href="#">Wix</a>
+                        <a class="subBox2-links" href="#">PrestaShop</a>
+                        <a class="subBox2-links" href="#">BigCommerce</a>
+                        <a class="subBox2-links" href="#">Ecwid</a>
+                        <a class="subBox2-links" href="#">Ecommerce</a>
+                        <a class="subBox2-links" href="#">Messenger</a>
+                        
+                    </div>
+                </div>
+                <div class="f-subBox2">
+                    <div class="subBox2-first">
+                        <p class="subBox2-head">
+                            RESOURCES
+                        </p>
+                    </div>
+                    <div class="subBox2-second">
+                        <a class="subBox2-links" href="#">Blog</a>
+                        <a class="subBox2-links" href="#">Case Studies</a>
+                        <a class="subBox2-links" href="#">Authors</a>
+                        <a class="subBox2-links" target="_blank" href="https://www.typeracer.com">Speed Typing Test</a>
+                        
+                    </div>
+
+                </div>
+               
+            </div>
+            
+        </div>
+    </footer>
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
